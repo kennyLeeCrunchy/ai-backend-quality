@@ -2,7 +2,7 @@
 
 [简体中文](README.zh-CN.md)
 
- This includes [`SKILL.md`](SKILL.md) and the reference chapters. This README provides an English overview. **The skill itself is written in Simplified Chinese.**
+ This includes [`SKILL.md`](SKILL.md) and the reference chapters. This README provides an English overview. The skill itself is written in Simplified Chinese.
 
 AI Backend Quality is an Agent Skill for designing, implementing, debugging, and reviewing backend services and AI applications. It follows a real request from the service entry point through storage, background work, model calls, or tool execution. It helps choose the smallest appropriate change and verify the resulting behavior.
 
