@@ -2,9 +2,9 @@
 
 [简体中文](README.zh-CN.md)
 
-**The Codex skill itself is written in Simplified Chinese.** This includes [`SKILL.md`](SKILL.md) and the reference chapters. This README provides an English overview.
+**The skill itself is written in Simplified Chinese.** This includes [`SKILL.md`](SKILL.md) and the reference chapters. This README provides an English overview.
 
-AI Backend Quality is a Codex skill for designing, implementing, debugging, and reviewing backend services and AI applications. It follows a real request from the service entry point through storage, background work, model calls, or tool execution. It helps choose the smallest appropriate change and verify the resulting behavior.
+AI Backend Quality is an Agent Skill for designing, implementing, debugging, and reviewing backend services and AI applications. It follows a real request from the service entry point through storage, background work, model calls, or tool execution. It helps choose the smallest appropriate change and verify the resulting behavior.
 
 ## Coverage
 
@@ -16,16 +16,16 @@ AI Backend Quality is a Codex skill for designing, implementing, debugging, and 
 
 [`SKILL.md`](SKILL.md) provides the workflow and points to the relevant reference chapters. [Service entry and traffic management](references/service-entry.md) has its own chapter. The [frontend–backend contracts](references/frontend-backend-contracts.md) and [verification matrix](references/verification-matrix.md) connect implementation decisions to observable behavior.
 
-## Use in Codex
+## Installation and use
 
-Clone the repository into your personal Codex skills directory so that `SKILL.md` sits directly in `ai-backend-quality`. For example, on Windows with the default user directory, run the following in PowerShell.
+Clone the repository.
 
-```powershell
-git clone https://github.com/kennyLeeCrunchy/ai-backend-quality.git "$env:USERPROFILE/.codex/skills/ai-backend-quality"
+```sh
+git clone https://github.com/kennyLeeCrunchy/ai-backend-quality.git
 ```
 
-In a Codex request, invoke the skill by name.
+Place the `ai-backend-quality` folder in the skills directory configured by your agent tool, with `SKILL.md` and `references/` at its root. Then ask your agent to use the skill by name.
 
 ```text
-$ai-backend-quality Review our report-generation backend for duplicate task creation, missed SSE events, and unsafe tool retries.
+Use ai-backend-quality to review our report-generation backend for duplicate task creation, missed SSE events, and unsafe tool retries.
 ```
