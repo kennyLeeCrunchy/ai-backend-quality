@@ -54,4 +54,3 @@ description: 设计、实现、排查或审查服务端请求链路。适用于 
 |---|---|
 | 日志、指标、追踪、故障定位与告警 | [可观测性与故障定位](references/observability-and-verification.md) |
 | 选择关键路径回归、注入故障、复现竞速和判断完成条件 | [后端验证矩阵](references/verification-matrix.md) |
-| 核对图书借阅案例的出处或前后端契约来源 | [来源与视频章节](references/sources.md) |
